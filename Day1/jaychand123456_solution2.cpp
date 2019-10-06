@@ -31,11 +31,11 @@ int main()
             }
             if(isprime(b))
             {
-                cout<<"YES"<<endl;
+                cout<<"Yes"<<endl;
             }
             else
             {
-                cout<<"NO"<<endl;
+                cout<<"No"<<endl;
             }
         }
         else
