@@ -13,30 +13,35 @@ bool isprime(int n)
 
 int main()
 {
-    int a,b=0;
-    cin>>a;
-    int temp = a;
-    bool a_is_prime = isprime(a);
-    if(a_is_prime)
+    int t;
+    cin>>t;
+    for(int x=0;x<t;++x)
     {
-        while(temp)
+        int a,b=0;
+        cin>>a;
+        int temp = a;
+        bool a_is_prime = isprime(a);
+        if(a_is_prime)
         {
-            int rem = temp%10;
-            b = b * 10 + rem;
-            temp = temp / 10;
-        }
-        if(isprime(b))
-        {
-            cout<<"YES"<<endl;
+            while(temp)
+            {
+                int rem = temp%10;
+                b = b * 10 + rem;
+                temp = temp / 10;
+            }
+            if(isprime(b))
+            {
+                cout<<"YES"<<endl;
+            }
+            else
+            {
+                cout<<"NO"<<endl;
+            }
         }
         else
         {
             cout<<"NO"<<endl;
         }
-    }
-    else
-    {
-        cout<<"NO"<<endl;
     }
     return 0;
 }
